@@ -1,4 +1,11 @@
-import { Controller } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common'
 
-@Controller('teams')
-export class TeamsController {}
+@Controller({
+  path: '/teams',
+})
+export class TeamsController {
+  @Get()
+  getTeams() {
+    console.log('teams')
+  }
+}
