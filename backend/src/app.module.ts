@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common'
 import { SampleController } from './controller/sample/some-data.controller'
-import { TeamsController } from './controller/teams/teams.controller'
+import { TeamsController } from './controller/team/teams.controller'
 
 // memo: DIコンテナとしては使わないため、controllerの追加だけしてください
 @Module({
